@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-   <!-- The overlay -->
+<style> 
+/* Background And Nav */
+html, body {
+  font-family: 'Lato', sans-serif;
+  color: black;
+   background-image: url('https://i.vimeocdn.com/video/781052023_640x360.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+}
+</style>
+  </head>
+  <body>
+ <!-- Navbar Code -->
 <div id="myNav" class="overlay">
-
-  <!-- Button to close the overlay navigation -->
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-  <!-- Overlay content -->
   <div class="overlay-content">
     <a href="#">About</a>
     <a href="#">Services</a>
@@ -19,18 +28,8 @@
     <a href="#">Contact</a>
   </div>
 </div>
-<!-- Use any element to open/show the overlay navigation menu -->
-<span onclick="openNav()">open</span>
-<style> 
-html, body{
-  background-image: url('https://i.pinimg.com/originals/47/d5/43/47d543ab8407c44f19932d905769c13e.jpg');
-}
-</style>
-  </head>
-
-  <body>
-    <!-- Left Content -->
-    
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+ <!-- 50/50 Left -->
     <div class="split left">
   <div class="centered">
     <h2>What is the Darkweb?</h2>
@@ -39,14 +38,13 @@ html, body{
 </div>
 
 <!-- Right Content -->
-
 <div class="split right">
   <div class="centered">
     <h2 style="color: black;">What is the Internet?</h2>
     <button class="blackbutton"> Learn More </button>
   </div>
 </div>
-     
+    
     <script src="script.js"></script>
   </body>
 </html>
