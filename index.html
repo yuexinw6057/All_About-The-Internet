@@ -6,11 +6,12 @@
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
 <style> 
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 /* Background And Nav */
 html, body {
-  font-family: 'Lato', sans-serif;
-  color: black;
-   background-image: url('https://i.vimeocdn.com/video/781052023_640x360.jpg');
+   color: white;
+   /* background-image: url('https://ak6.picdn.net/shutterstock/videos/9812606/thumb/1.jpg'); */
+   background-image: url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-027.jpg');
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-size: cover;
@@ -22,29 +23,33 @@ html, body {
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <a href="#">Government Responses</a>
+    <a href="#">Layers Of Internet</a>
+    <a href="#">Online Safety</a>
+    <a href="#">About Me</a>
   </div>
 </div>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
- <!-- 50/50 Left -->
-    <div class="split left">
-  <div class="centered">
-    <h2>What is the Darkweb?</h2>
-    <button class="whitebutton"> Learn More </button>
+<span style="font-size:30px;cursor:pointer;font-family: 'Creepster', cursive;" onclick="openNav()">&#9776; Open</span>
+<!-- Content -->
+
+<h2 class="header">Below Are The Two Sides Of The internet. <br>
+Click At Your Own Risk. </h2>
+<div class="row">
+  <div class="column">
+    <div class="card1">
+      <h3> <i>The Dark Web</i></h3>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card2">
+      <h3> <i> The Internet </i></h3>
+      <p>Some text</p>
+    </div>
   </div>
 </div>
 
-<!-- Right Content -->
-<div class="split right">
-  <div class="centered">
-    <h2 style="color: black;">What is the Internet?</h2>
-    <button class="blackbutton"> Learn More </button>
-  </div>
-</div>
-    
     <script src="script.js"></script>
   </body>
 </html>
