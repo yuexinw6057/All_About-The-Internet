@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Romanesco&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/*background*/
+ html{
+ background: url("https://images.squarespace-cdn.com/content/v1/5c911b93a568276ecc30dab7/1553721917331-KA62PYY753K5S2QLHZJX/ke17ZwdGBToddI8pDm48kL4WrIntsHuCODFzGytxs8sUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcw31z2cKmL83lZVTgYf1Shcnt0pzT4b-h8WwoQ3rX-86z0Q_QpJgDA4jmv5AtYw-J/photo-1530482817083-29ae4b92ff15.jpg?format=2500w") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* NavBar */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  font-family: 'Creepster', cursive;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Creepster', cursive;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+/*Fonts */
+.header{
+  text-align: center; 
+  color: white;
+  /* font-family: 'Sancreek', cursive; */
+  font-family: 'Creepster', cursive;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.container{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 50%;
+  }
+
+.accordion {
+  background-color: #111;
+  color: crimson;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: middle;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  transition: 0.5s;
+}
+button.accordion.active,
+button.accordion:hover {
+  background-color: rgb(134, 27, 24);
+  color: white;
+}
+div.panel {
+  padding: 0 10px;
+  background-color: White;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+#secondli{
+  text-align: center;
+  list-style-type: none;
+  font-size: 150%;
+}
+
+.fact{
+  margin-top: 150px;
+}
+
+.imgd{
+display: block;
+ margin-left: 400px;
+margin-right: auto;
+}
+.size{
+  font-size: 200%;
+}

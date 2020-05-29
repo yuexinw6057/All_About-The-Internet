@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cute+Font&family=Kelly+Slab&family=Indie+Flower&family=Rock+Salt&display=swap');
+/*background*/
+html{
+ background: url("https://wallpaperaccess.com/full/346956.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* NavBar */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  font-family: 'Creepster', cursive;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Creepster', cursive;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.center{
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Rock Salt', cursive;
+  margin-top: -30px;
+  color: white;
+  text-shadow: 2px 2px lightgray;
+}
+.center2{
+  text-align: center;
+  font-family: 'Kelly Slab', cursive;
+  padding: 0 70px 0 70px;
+}
+/*Floating animation */
+@keyframes floating {
+from { transform: translate(0,  0px); }
+65%  { transform: translate(0, 15px); }
+to   { transform: translate(0, -0px); }    
+  }
+.float {
+animation-name: floating;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+margin-left: 10px;
+   }
+.motivation{
+  padding-left: 50px;
+  text-shadow: 2px 2px white;
+}
+ul{
+  list-style-type: none;
+  font-family: 'Kelly Slab', cursive;
+  font-size: 25px;
+  color: red;
+  text-shadow: 1.2px 1.2px black;
+}
+.height{
+  line-height: 25px;
+  text-align: center;
+}
+@media screen and (max-width: 400px){
+  .height{ 
+    padding-left: 130px;
+  }
+}
+.motistyle{
+  text-align: center;
+  padding: 0px 70px 0px 70px;
+  margin-top: -10px;
+  font-family: 'Kelly Slab', cursive;
+  font-size: 24px;
+  color: lightgray;
+}
+.info {
+  margin-top: -10px;
+  font-family: 'Kelly Slab', cursive;
+  font-size: 24px;
+}
+.a2{
+  text-decoration: none;
+  color: red;
+}
+.a2:hover{
+  background-color: blanchedalmond;
+}
+.purpose{
+  font-family: 'Kelly Slab', cursive;
+  font-size: 24px;
+  color: lightgray;
+  padding: 0 70px 0 70px;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 600px){
+  .info{
+    column-count: 3;
+  }
+}
+.red{
+  color: red;
+}
+.cinfo{
+  font-family: 'Indie Flower', cursive;
+  font-size: 22px;
+  color: lightgray;
+  margin: -10px 0 20px 70px;
+}
+.font{
+  font-family: 'Kelly Slab', cursive;
+}
