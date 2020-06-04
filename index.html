@@ -15,51 +15,60 @@ html, body {
    background-attachment: fixed;
    background-size: cover;
 }
-  @keyframes floating {
+@keyframes floating {
     from { transform: translate(0,  0px); }
     65%  { transform: translate(0, 15px); }
     to   { transform: translate(0, -0px); }    
-      }
-      .float {
-      animation-name: floating;
-      animation-duration: 3s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-      margin-left: 10px;
-      }
+}
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
 </style>
+<span style="font-size:35px;cursor:pointer;font-family: 'Creepster', cursive; color:lightgray;" onclick="openNav()">&#9776; Open</span>
   </head>
   <body>
- <!-- Navbar Code -->
+  <!-- Navbar Code -->
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
     <a href="gov.html">Government Responses</a>
-    <a href="layers.html">Layers Of Internet</a>
+    <a href="layers.html">Deep Web & Dark web</a>
     <a href="safety.html">Online Safety</a>
     <a href="me.html">About Me</a>
+    <a href="index.html">Home </a>
   </div>
 </div>
-<span style="font-size:30px;cursor:pointer;font-family: 'Creepster', cursive;" onclick="openNav()">&#9776; Open</span>
 <!-- Content -->
-<h2 class="header">Below Are The Two Sides Of The internet. <br>
-Click At Your Own Risk. </h2>
+<h2 class="header floating"> Choose where to begin. <br>
+Click On Your Own Risk. </h2>
+<div class="container">
 <div class="row">
   <div class="column">
-    <div class="card1">
-      <h3> <a class="darkweb" href="layers.html"> <i>The Dark Web</i> </a></h3>
-      <p> <a class="darkweb" href="layers.html"> CLICK ME TO LEARN MORE! </a></p>
+    <div class="card1 floating">
+       <h3> <a class="darkweb" href="layers.html#darkweb"> <i>The Dark Web</i> </a></h3>
+      <p> <a class="darkweb" href="layers.html#darkweb"> CLICK ME TO LEARN MORE! </a></p>
     </div>
   </div>
+
   <div class="column">
-    <div class="card2">
-      <h3> <a class="internet" href="layers.html"><i> The Internet </i> </a> </h3>
-      <p> <a class="internet" href="layers.html">CLICK ME TO LEARN MORE! </a></p>
+    <div class="card2 floating">
+      <h3> <a class="internet" href="layers.html#internet"><i> The Surface Web </i> </a> </h3>
+      <p> <a class="internet" href="layers.html#internet">CLICK ME TO LEARN MORE! </a></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card3 floating">
+      <span style="cursor:pointer; " onclick="openNav()"> Or... <b style="color:slategray;"> click me </b> to select what you'll read.</span>
     </div>
   </div>
 </div>
+<!--
 <img src="https://media2.giphy.com/media/t9kGA5Tam8HNCpJZ1A/source.gif" alt="skull" class="float" width="100">
-<img src="https://pillowfortmedia.s3.amazonaws.com/froala_pics/ea002b525435_bat2.gif" class="right float" width="100" alt="bat">
+<img src="https://pillowfortmedia.s3.amazonaws.com/froala_pics/ea002b525435_bat2.gif" class="right float" width="100" alt="bat"> -->
     <script src="script.js"></script>
   </body>
 </html>

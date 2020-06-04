@@ -2,15 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Romanesco&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
 /*Cards */
 * {
   box-sizing: border-box;
 }
 
-/* Float four columns side by side */
+/* Float columns side by side */
 .column {
   float: left;
-  width: 25%;
+  width: 20%;
   padding: 0 10px;
 }
 
@@ -18,7 +19,7 @@
 .row {
   margin: 0 -5px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between; 
 }
 
 /* Clear floats after the columns */
@@ -28,7 +29,7 @@
   clear: both;
 }
 
-/* Verticle columns */
+/* Verticle columns */ 
 @media screen and (max-width: 700px) {
   .row {
     display: flex;
@@ -42,6 +43,11 @@
   .card2{
     width: 300px;
     margin-left: -100px;
+    margin-bottom: 30px;
+  }
+  .card3{
+    width: 300px; 
+    margin-left: -100px;
   }
 }
 
@@ -50,7 +56,7 @@
   padding: 16px;
   margin-bottom: 30px;
   text-align: center;
-  background-color: #201d1d;
+  background-color: #1a1919;
   transition: 1s;
   height: 300px;
   font-size: 29px;
@@ -58,6 +64,7 @@
   letter-spacing: 2px;
   font-family: Sancreek, cursive;
   color: aliceblue;
+  width: 250px;
 }
 .card1:hover{
   box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.795);
@@ -65,18 +72,34 @@
 .card2 {
   padding: 16px;
   text-align: center;
-  background-color: #9e9c9c;
-  color: black;
+  background-color: #383434;
+  color: white;
   transition: 1s;
   height: 300px;
   font-family: Sancreek, cursive;
   letter-spacing: 2px;
   font-size: 30px;
   box-shadow: 0 4px 8px 0 rgba(216, 206, 206, 0.342);
+  width: 250px;
 }
 .card2:hover{
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.795);
-   
+}
+.card3{
+  padding: 2rem; 
+  text-align: center;
+  background-color: #292424;
+  color: white;
+  transition: 1s;
+  height: 300px;
+  font-family: Sancreek, cursive;
+  letter-spacing: 2px;
+  font-size: 30px;
+  box-shadow: 0 4px 8px 0 rgba(216, 206, 206, 0.342);
+  width: 250px;
+}
+.card3:hover{
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.795);
 }
 /* NavBar */
 .overlay {
@@ -133,9 +156,9 @@
 /*Fonts */
 .header{
   text-align: center; 
-  color: white;
-  /* font-family: 'Sancreek', cursive; */
-  font-family: 'Creepster', cursive;
+  color: rgb(245, 11, 11);
+  font-family: 'Piedra', cursive;
+  margin-left: 46px;
   font-size: 25px;
   letter-spacing: 2px;
 }
@@ -148,11 +171,21 @@
 .internet{
   display: inherit;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .right{
   position: relative;
   bottom: 355px;
   left: 225px;
   transform: scaleX(-1) scale(1.5);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  column-gap: 400px;
 }

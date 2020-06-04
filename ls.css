@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Romanesco&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Sancreek&family=Nosifer&family=Creepster&family=Titillium+Web&display=swap');
 /*background*/
+/*
  html{
- background: url("https://images.squarespace-cdn.com/content/v1/5c911b93a568276ecc30dab7/1553721917331-KA62PYY753K5S2QLHZJX/ke17ZwdGBToddI8pDm48kL4WrIntsHuCODFzGytxs8sUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcw31z2cKmL83lZVTgYf1Shcnt0pzT4b-h8WwoQ3rX-86z0Q_QpJgDA4jmv5AtYw-J/photo-1530482817083-29ae4b92ff15.jpg?format=2500w") no-repeat center center fixed; 
+ background: url("https://chesterspirit.com/wp-content/uploads/2016/02/Plain-Grey-Background.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+} */
+html{
+  background-color: #141412;
 }
 /* NavBar */
 .overlay {
@@ -63,62 +64,82 @@
   }
 }
 /*Fonts */
-.header{
-  text-align: center; 
-  color: white;
-  /* font-family: 'Sancreek', cursive; */
-  font-family: 'Creepster', cursive;
-  font-size: 25px;
-  letter-spacing: 2px;
+.font{
+  font-family: 'Sancreek', cursive;
 }
-
-.container{
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  width: 50%;
-  }
-
-.accordion {
-  background-color: #111;
-  color: crimson;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  text-align: middle;
-  border: none;
-  outline: none;
-  font-size: 15px;
-  transition: 0.5s;
-}
-button.accordion.active,
-button.accordion:hover {
-  background-color: rgb(134, 27, 24);
+.subheader{
+  margin-top: -10px;
   color: white;
 }
-div.panel {
-  padding: 0 10px;
-  background-color: White;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+.layer {
+  vertical-align: middle;
 }
-
-#secondli{
+.pic1{
+  display: flex;
+  justify-content: center;
+}
+.center{
+  margin: 2rem;
+  color: lightgray;
   text-align: center;
-  list-style-type: none;
-  font-size: 150%;
+}
+.sub{
+  font-size: 35px;
+  color: lightslategrey;
+  margin-left: 25px;
+  font-family: 'Chelsea Market', cursive;
+  text-transform: uppercase;
+}
+.para{
+  text-align: center;
+  font-size: 23.5px;
+  font-family: 'Titillium Web', sans-serif;
+  color: lightgray;
+  padding: 1.5rem;
+}
+.small{
+  font-size: 20px;
+}
+.listheader{
+  font-size: 25px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+  padding-left: 30px;
+  color: red;
+}
+ul{
+  margin-top: -40px;
+  margin-left: 20px;
 }
 
+li{
+  font-size: 23.5px;
+  font-family: 'Titillium Web', sans-serif;
+  color: darkgray;
+}
+.listheader2{
+  margin-top: -10px;
+  font-size: 25px;
+  margin-bottom: -10px;
+  padding-left: 30px;
+  color: red;
+}
 .fact{
-  margin-top: 150px;
+  font-size: 35px;
+  color: rgb(212, 32, 32);
+  margin-left: 25px;
+  font-family: 'Chelsea Market', cursive;
+  text-transform: uppercase;
+}
+.red{
+  color: rgb(214, 2, 2);
+}
+.skip{
+  text-decoration: none;
+  color: gold;
+}
+.skip:hover{
+  background-color: white;
+  color: red;
 }
 
-.imgd{
-display: block;
- margin-left: 400px;
-margin-right: auto;
-}
-.size{
-  font-size: 200%;
-}
