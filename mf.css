@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cute+Font&family=Kelly+Slab&family=Indie+Flower&family=Rock+Salt&display=swap');
 /*background*/
-
+/*
 html{
  background: url("https://wallpaperaccess.com/full/346956.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-} 
-/*html{
+} */
+html{
   background-color: #141412;
 }
 /* NavBar */
